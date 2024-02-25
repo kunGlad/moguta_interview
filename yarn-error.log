@@ -1,0 +1,47 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.19.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.com/umi: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:141550:19)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "private": true,
+    "author": "zhaokun <1613430161@qq.com>",
+    "scripts": {
+      "dev": "umi dev",
+      "build": "umi build",
+      "postinstall": "umi setup",
+      "setup": "umi setup",
+      "start": "npm run dev"
+    },
+    "dependencies": {
+      "umi": "^4.1.2"
+    },
+    "devDependencies": {
+      "@types/react": "^18.0.33",
+      "@types/react-dom": "^18.0.11",
+      "typescript": "^5.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
